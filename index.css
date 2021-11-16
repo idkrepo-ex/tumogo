@@ -1,0 +1,176 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Dancing+Script&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --clr-1: #94b3fd;
+  --clr-2: #94daff;
+  --clr-3: #2f86a6;
+  --clr-4: #ffce45;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+html,
+body {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+/* Reusable Styles */
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--clr-4);
+  font-family: "Dancing Script", cursive;
+}
+
+/* First Content Styles */
+.first-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, var(--clr-1), var(--clr-3));
+}
+
+.tumogo-logo {
+  width: 500px;
+}
+
+.cloud-img {
+  width: 100%;
+}
+
+/* Second Content Styles */
+.tumogo {
+  padding-top: 5%;
+  color: white;
+  letter-spacing: 20px;
+  font-size: 80px;
+}
+
+.second-content {
+  position: relative;
+  padding: 0 60px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(to bottom, var(--clr-3), var(--clr-1));
+}
+
+.second-title {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 30px;
+  width: 400px;
+  border-bottom: 5px dotted #fff;
+}
+
+.second-title h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.second-subtitle {
+  padding: 0 150px;
+  line-height: 35px;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 20px;
+  color: var(--clr-4);
+  text-align: center;
+}
+
+.awan1 {
+  position: absolute;
+  bottom: 20px;
+  left: -30px;
+  transform: rotate(-10deg);
+  width: 200px;
+}
+
+/* Third Content Styles */
+.third-content {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--clr-1), rgba(255, 206, 69, 0.5));
+}
+
+.choose-fav {
+  width: 50%;
+}
+
+.awan2 {
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+  width: 200px;
+}
+
+/* Fourth Content Styles */
+.fourth-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 206, 69, 0.5),
+    rgba(255, 206, 69, 0.8)
+  );
+}
+
+.kiosk {
+  width: 40%;
+}
+
+.awan3 {
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  width: 200px;
+}
+
+.awan4 {
+  position: absolute;
+  right: -40px;
+  top: 20%;
+  width: 200px;
+  transform: rotate(-15deg);
+}
+
+.awan5 {
+  position: absolute;
+  right: -40px;
+  top: 80%;
+  width: 200px;
+  transform: rotate(-15deg);
+}
