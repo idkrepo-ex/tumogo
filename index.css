@@ -40,6 +40,7 @@ img {
   align-items: center;
   height: 100%;
   width: 100%;
+  overflow: hidden;
   background: linear-gradient(to bottom, var(--clr-1), var(--clr-3));
 }
 
@@ -68,6 +69,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   gap: 20px;
   background: linear-gradient(to bottom, var(--clr-3), var(--clr-1));
 }
@@ -115,14 +117,15 @@ img {
   width: 100%;
   height: 100%;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom, var(--clr-1), rgba(255, 206, 69, 0.5));
 }
 
-.choose-fav {
-  width: 50%;
+.oven{
+  width: 60%;
 }
 
 .awan2 {
@@ -132,9 +135,14 @@ img {
   width: 200px;
 }
 
+.third-content-link i{
+  cursor: pointer;
+}
+
 /* Fourth Content Styles */
 .fourth-content {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: 100%;
   display: flex;

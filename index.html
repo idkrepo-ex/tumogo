@@ -16,20 +16,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-5E4CPSVD9Q"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-5E4CPSVD9Q");
-    </script>
     <title>TUMOGO</title>
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -66,25 +52,28 @@
 
     <!-- Third Content Section -->
     <section class="third-content">
-      <div class="choose-fav">
-        <img src="./assets/choose_fav.png" alt="Choose Fav Title" />
-      </div>
       <div class="oven">
         <img src="./assets/oven.png" alt="Oven " />
       </div>
-      <div>
-        <i
-          class="fa fa-whatsapp"
-          style="font-size: 48px; color: white; padding-right: 10px"
-        ></i>
-        <i
-          class="fab fa-instagram"
-          style="font-size: 48px; color: white; padding-right: 10px"
-        ></i>
-        <i
-          class="fas fa-phone-square-alt"
-          style="font-size: 48px; color: white; padding-right: 10px"
-        ></i>
+      <div class="third-content-link">
+        <a id="wa" target="_blank" href="https://wa.me/089605134655">
+          <i
+            class="fa fa-whatsapp"
+            style="font-size: 48px; color: white; padding-right: 10px"
+          ></i>
+        </a>
+        <a id="ig" target="_blank" href="https://www.instagram.com/tumogo/">
+          <i
+            class="fab fa-instagram"
+            style="font-size: 48px; color: white; padding-right: 10px"
+          ></i>
+        </a>
+        <a href="">
+          <i
+            class="fas fa-phone-square-alt"
+            style="font-size: 48px; color: white; padding-right: 10px"
+          ></i>
+        </a>
       </div>
       <img src="./assets/awan.png" alt="Awan" class="awan2" />
     </section>
@@ -97,5 +86,48 @@
       <img src="./assets/awan.png" alt="Awan" class="awan3" />
       <img src="./assets/awan.png" alt="Awan" class="awan5" />
     </section>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5E4CPSVD9Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      const clickWa = () => {
+        gtag('event', 'User Click WA Event', {
+          'event_label': 'WA Link Clicked',
+          'event_category': 'click_link',
+          'value': 1,
+        })
+      }
+
+      const clickIg = () => {
+        gtag('event', 'User Click IG Event', {
+          'event_label': 'IG Link Clicked',
+          'event_category': 'click_link',
+          'value': 1,
+        })
+      }
+
+      gtag("config", "G-5E4CPSVD9Q");
+
+      const wa = document.getElementById('wa');
+      const ig = document.getElementById('ig')
+
+      wa.addEventListener('click', () => {
+        clickWa()
+      })
+
+      ig.addEventListener('click', () => {
+        clickIg()
+      })
+
+      // wa.addEventListener('click', clickWa());
+    </script>
   </body>
 </html>
